@@ -1,0 +1,16 @@
+<table>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Detalle</th>
+    </tr>
+    <tr *ngFor="let item of projects  | async">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>
+          <a [routerLink]="item.id" routerLinkActive="router-link-active" class="button">
+            <span> Details</span>
+          </a>
+        </td>
+    </tr>
+</table>

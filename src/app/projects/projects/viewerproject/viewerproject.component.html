@@ -1,0 +1,14 @@
+<section>
+  <!-- <h2>Detalle de proyecto - {{project$.name}}</h2> -->
+  <section>
+      <!-- <ul>
+        <li>Id: {{project$.id}}</li>
+        <li>Name: {{project$.name}}</li>
+      </ul> -->
+    <pre>{{project$ | async | json}}</pre>
+    <a routerLink="/projects" routerLinkActive="router-link-active" class="button">
+      <span>Volver</span>
+    </a>
+  </section>
+
+</section>

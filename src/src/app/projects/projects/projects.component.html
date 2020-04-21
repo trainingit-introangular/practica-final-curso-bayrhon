@@ -1,0 +1,16 @@
+<h2>Proyectos</h2>
+<header class="sticky">
+  <a routerLink="newproject" routerLinkActive="router-link-active" class="button">
+    <span class="icon-edit"></span><span>Añadir proyecto</span>
+  </a>
+</header>
+<br />
+
+<app-filterprojects (filter)="onFilter($event)"
+                    (deleteFilter)="onDeleteFilter($event)">
+</app-filterprojects>
+
+<app-projectlist  [projects] = "projects$">
+</app-projectlist>
+
+<router-outlet></router-outlet>

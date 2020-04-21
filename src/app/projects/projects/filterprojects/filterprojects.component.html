@@ -1,0 +1,12 @@
+<form>
+    <fieldset>
+        <legend>Filtrar proyectos</legend>
+        <section>
+          <label for="id">id</label>
+          <input name="id" type="text" [(ngModel)]="id" placeholder="Project id"/>
+        </section>
+    </fieldset>
+    <input value="Filtrar" type="submit" (click)="filter.emit(this.id)"/>
+    <input value="Borrar Filtros" type="submit" (click)="deleteFilter.emit(1)"/>
+</form>
+
